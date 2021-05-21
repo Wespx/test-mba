@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Styrene A Web";
+  src: local("Styrene A Web"), url("../fonts/StyreneAWeb-Light.woff2") format("woff2"), url("../fonts/StyreneAWeb-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Styrene A Web";
+  src: local("Styrene A Web"), url("../fonts/StyreneAWeb-Medium.woff2") format("woff2"), url("../fonts/StyreneAWeb-Medium.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Styrene A Web";
+  src: local("Styrene A Web"), url("../fonts/StyreneAWeb-Bold.woff2") format("woff2"), url("../fonts/StyreneAWeb-Bold.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+/*# sourceMappingURL=fonts.css.map */

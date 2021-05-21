@@ -1,0 +1,19 @@
+@import '_mixins.scss';
+
+.discipline {
+    @include flexWrap;
+    margin-bottom: 65px;
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 50px;
+        
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    &__modules {
+        @include listReset;
+        width: 100%;
+    }
+}

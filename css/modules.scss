@@ -1,0 +1,49 @@
+@import '_mixins.scss';
+
+.modules {
+    @include flexWrap;
+
+    &__item {
+        display: flex;
+        flex-grow: 1;
+
+        &:not(:last-child) {
+            margin-right: 3%;
+        }
+    }
+    
+    &__title {
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-right: 16%;
+        padding-top: 30px;
+        min-width: fit-content;
+        border-top: 1px solid red;
+
+        font-size: 32px;
+        font-weight: 300;
+
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    &__list {
+        @include listReset;
+        padding-top: 40px;
+        width: 373px;
+
+        transition: height 0.2s ease;
+    }
+
+    &__list-item {
+        position: relative;
+        
+        &:not(:last-child) {
+            margin-bottom: 11px;
+        }
+
+        &::before {
+            @include marker;
+            left: -20px;
+        }
+    }
+}

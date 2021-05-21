@@ -1,0 +1,68 @@
+.modules {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.modules__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.modules__item:not(:last-child) {
+  margin-right: 3%;
+}
+
+.modules__title {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-right: 16%;
+  padding-top: 30px;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  border-top: 1px solid red;
+  font-size: 32px;
+  font-weight: 300;
+  -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.modules__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding-top: 40px;
+  width: 373px;
+  -webkit-transition: height 0.2s ease;
+  transition: height 0.2s ease;
+}
+
+.modules__list-item {
+  position: relative;
+}
+
+.modules__list-item:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.modules__list-item::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 60px;
+  background-color: #FF3535;
+  left: -20px;
+}
+/*# sourceMappingURL=modules.css.map */

@@ -1,0 +1,53 @@
+@import '_mixins.scss';
+
+.features {
+    @include flexWrap;
+    justify-content: space-around;
+    margin-top: 150px;
+
+    &__feature {
+        max-width: 49%;
+        min-width: 614px;
+        padding: 56px 90px 92px 72px;
+        margin-bottom: 23px;
+
+        color: #fff;
+        line-height: 1.2;
+    }
+
+    &__title {
+        margin-top: 0;
+
+        font-size: 36px;
+    }
+
+    &__text {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        font-size: 20px;
+    }
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__list-item {
+        position: relative;
+
+        font-size: 20px;
+        
+        &::before {
+            @include marker;
+            left: -20px;
+        }
+    }
+
+    &__feature_red {
+        background-color: #FF3535;
+    }
+
+    &__feature_black {
+        background-color: #2D2C2A;
+    }
+}

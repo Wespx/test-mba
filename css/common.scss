@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    font-family: "Styrene A Web", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-width: 370px;
+}
